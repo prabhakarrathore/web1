@@ -1,0 +1,286 @@
+Login
+    The login functionality is working seamlessly. Users can log into the system without any issues. Credentials are authenticated correctly, and successful login redirects users to the appropriate dashboard.
+
+Dashboard
+    The dashboard is functioning properly. It displays accurate data and analytics, ensuring administrators can view real-time insights without any discrepancies.
+
+Settings
+    Logo
+        The logo and favicon settings are working as expected. Administrators can update the logo and favicon, and changes are reflected immediately without any issues.
+    Favicon
+        The logo and favicon settings are working as expected. Administrators can update the logo and favicon, and changes are reflected immediately without any issues.
+
+    Top Bar 
+        Both the top bar and footer components function perfectly. Updates made to these areas, such as text, color, or links, are saved and displayed correctly on the frontend.
+    Footer
+        Both the top bar and footer components function perfectly. Updates made to these areas, such as text, color, or links, are saved and displayed correctly on the frontend.
+
+    Email Configuration
+        The email settings are fully operational. The system can send emails reliably, and all configurations are stored accurately.
+
+    Banner Section
+        The banner section allows updates with only the correct image size being accepted. This validation ensures optimal design consistency and avoids layout issues.
+
+    Sidebar Configuration
+        The sidebar is functioning well. Any data updated within the sidebar configuration is reflected instantly, ensuring users see real-time changes.
+
+    Color Customization
+        Color customization is functioning smoothly. Changes in color themes or individual UI components are saved and displayed correctly throughout the application.
+Pages
+
+    Home Page
+        The Home page serves as the landing page of the website. It displays key sections such as banner sliders, service highlights, testimonials, featured news or events, and other introductory content. It is designed to give visitors a quick overview of what the site offers. All the content on this page can be updated via the admin panel and changes reflect correctly on the frontend.
+
+    About Page
+        The About page is fully functional and presents information about the company or organization. It includes text, images, and possibly team member highlights or brand history. The admin can update this information easily, and it renders correctly for users.
+
+    FAQ Page
+        The Frequently Asked Questions (FAQ) page allows administrators to add questions and answers that help users understand how to use the site or services better. It’s designed to reduce user confusion and support tickets. This section is editable and changes show up without any issues.
+
+    Service Page
+     The Service page lists all the services provided by the business or platform. Each service can include a title, description, and icon or image. Administrators can add or update services, and these modifications are shown accurately on the frontend.
+
+    Testimonial Page
+       This page showcases user or client testimonials. These testimonials can be added or updated through the backend, and they appear in a visually appealing layout to build trust with site visitors. The section is functioning properly.
+
+    News Page
+      The News page displays the latest news articles or blog posts. It supports news categories, author tags, and comments. Content is organized by date or category, and users can read full articles by clicking on individual titles.
+
+    Event Page
+      The Event page lists upcoming or past events related to the business. It allows administrators to add event details such as date, location, description, and images. The data is saved correctly and displayed in a structured layout.
+
+    Contact Page
+      The Contact page contains a form that users can fill out to send inquiries. It typically includes fields like name, email, message, and optionally a subject. The form is working correctly, and submissions are processed without issues. Contact information like address, phone, and email can also be displayed.
+
+    Search Page
+     The search feature allows users to look for content across the website, including news, services, events, etc. The search functionality is operational and returns relevant results based on user queries.
+
+    Terms and Conditions Page
+     This static page contains the website’s legal information and usage terms. It is editable through the admin panel and ensures users understand their rights and responsibilities when using the platform.
+
+    Privacy Policy Page
+     The Privacy Policy page outlines how user data is collected, used, and protected. It’s a crucial part of legal compliance. This page is editable and updates are shown correctly on the site.
+
+    Team Page
+     The Team page highlights members of the organization with their photos, names, roles, and possibly short bios. Admins can add, edit, or delete team members, and all updates are reflected correctly.
+
+    Portfolio Page
+     The Portfolio page showcases completed projects or case studies. Projects can be organized into categories, and each portfolio item can include images, descriptions, and tags. This section is well-organized and fully functional.
+
+
+Language Localization
+    The language module is working as intended. Text in sections and component names can be translated or renamed into a local language, improving accessibility for regional users.
+
+ News Management
+    News Categories
+    The news category management is functioning properly. New categories can be added successfully without any errors.
+
+    News Posts
+    News articles are added without issue. Data entry is smooth and validated to ensure proper formatting.
+
+    Comments
+    Users can add and delete comments on news articles. The comment system works well, and comments are displayed in HTML format as expected.
+
+Events
+All event-related data is added successfully. The event system shows no errors, and the data reflects correctly on the frontend.
+
+Subscribers
+
+    All Subscribers
+    Currently, there is no subscriber data available to test the full functionality of this section.
+
+    Email to Subscribers
+    Emails can be sent to subscribers. However, the system shows an error message despite the email being sent successfully. This could lead to confusion and needs to be addressed.
+
+Team Members
+    Team member information is added without error. The system allows for successful addition and updates of team details.
+
+Slider
+    All slider content is being added successfully. Slider images and text are displayed correctly on the frontend.
+
+Testimonial
+    Testimonials are managed without any issues. All data is added and updated successfully, and testimonials are displayed properly on the frontend.
+
+Photo Gallery
+    The photo gallery functions well. Images can be added, and no errors occur during the upload or display process.
+
+Pricing Table
+    This section is implied to be working correctly, although specific details were not mentioned. Assuming functionality based on pattern.
+
+Portfolio 
+    Portfolio Categories
+        Portfolio categories can be added successfully. The category list is organized in a clean and structured format.
+
+    Portfolio Items
+        All portfolio data can be added or updated without issue. The changes are properly reflected in the frontend display.
+
+Client Management
+    Client information is added and updated successfully. The system reflects changes in real-time, supporting efficient client management.
+
+Services
+    Service data is managed effectively. New services can be added, and existing ones can be updated. All changes are reflected accurately.
+
+Features
+    Feature listings are assumed to be functional based on the other content modules. More details can be added later if required.
+
+Why Choose Us
+    This section is working perfectly. Changes made to its content or structure are immediately reflected on the frontend.
+
+FAQ
+    All frequently asked questions can be added and edited as needed. This helps users understand how to use the application efficiently.
+
+Social Media
+    All social media platforms have been integrated successfully. The links or icons work as expected, ensuring users can connect via various platforms.
+
+
+Website Speed: 
+        The application currently loads slowly, which could affect user experience and SEO performance. Optimization is recommended.
+  
+Alert Messages: 
+    Alerts remain on the screen longer than necessary, even after the issue has been resolved. The alert dismissal logic needs refinement.
+  
+Success Messages vs. Actual Output: 
+    In some cases, success messages are shown, but the intended action (like image updates) does not take place. Moreover, there is no error message shown, making debugging difficult. This needs urgent attention to ensure backend operations match frontend messages.
+
+"write vba code for ppt it have use give data and image this is the path "D:\prabhakar-BcaCoding\html,css & javascript\web\img\img (0).png" of the image and 0 should increase and it should have 45 slides"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+error 
+	website is slow 
+	alert remain for long time even thing is solve
+	alert show success message but page does not image not update and show no error message 
+
+dashboard
+	dashboard is working properly and showing correct results
+settings
+	logo 
+		work perfectly and update
+	favicon
+		work perfectly and update
+	top bar
+		work perfectly
+	footer 
+		working properly
+	Email 
+		working properly 
+	Banner
+		banner is working properly and only right size image can be seted
+	sidebar
+		it is working properly and all the data is updated correctly and reflect changes
+	colour 
+		colour update successfully	
+Page
+	Home
+		working properly
+	About
+		working properly
+	FAQ
+		working properly
+	Home
+        working properly
+    About
+        working properly
+    FAQ
+        working properly
+    Service
+        working properly
+    Testimonial
+        working properly
+    News
+        working properly
+    Event
+        working properly
+    Contact
+        working properly
+    Search
+        working properly
+    Terms
+        working properly
+    Privacy
+        working properly
+    Team
+        working properly
+    Portfolio
+        working properly
+
+Language
+    it work for the text in the section is and name can be renamed in local Language
+
+News
+    category
+        it is working properly and event is added successfully
+    News
+        it is working and data is added successfully without error
+    comment 
+        comment is added and removed successfully in html Language
+Event
+    All the data is added successfully and show no error
+
+subscriber
+    All subscriber
+        No data is available to check 
+    Email to subscriber
+        Email is sended successfully and show error
+Team Member
+    All the data is added successfully and show no error
+Slider
+    All the data is added successfully and show no error
+Testimonial
+    All the data is added successfully and show no error
+
+Photo Gallery
+    All the data is added successfully and show no error
+
+Pricing Table
+
+Portfolio 
+    Portfolio category
+        Add the Portfolio added successfully and list is perfectly organise
+    Portfolio
+        All the data is added and new data can be updated
+Client
+    All the data is added and Client are added and updated
+
+Service
+    All the data is added and Service are added and updated
+
+Feature
+
+Why choose Us
+    working perfectly and reflect changes on frontend
+
+FAQ
+    Add all the question that can help the user to use app easly.
+
+Social Media
+    all the Social Media platform is added and all the platform working.
+

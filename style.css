@@ -1,0 +1,830 @@
+/* --- style.css --- */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Optional: Smooth scrolling for anchors */
+    font-size: 100%;
+    /* Base font size (usually 16px) */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    /* Slightly increased line height for readability */
+    color: #444;
+    /* Slightly softer body text color */
+    background-color: #f8f9fa;
+    /* Light grey background */
+    font-size: 1rem;
+    /* Equivalent to 16px by default */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    /* Consistent bottom margin */
+    font-weight: 700;
+    line-height: 1.3;
+    color: #212529;
+    /* Darker heading color */
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+/* Paragraphs and Links */
+p {
+    margin-bottom: 1.2rem;
+    /* Consistent paragraph spacing */
+}
+
+a {
+    color: #007bff;
+    /* Standard blue link color */
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Lists */
+ul,
+ol {
+    margin-left: 25px;
+    margin-bottom: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.7rem;
+    /* Slightly more space between list items */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Prevents bottom space under images */
+    border-radius: 4px;
+    /* Slight rounding on all images */
+}
+
+/* Utilities */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-padding {
+    padding: 3.5rem 2.5rem;
+    /* Generous padding for content pages */
+    background-color: #ffffff;
+    /* White background for content area */
+    margin-top: 2.5rem;
+    /* Space below header/slider */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    /* Subtle shadow */
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    /* Slightly larger intro text */
+    color: #555;
+    margin-bottom: 1.8rem;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 28px;
+    /* Button padding */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    /* Match heading font */
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+    /* Button shadow */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: #ffffff;
+    transform: translateY(-3px);
+    /* More lift effect */
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.4);
+    /* Enhanced shadow on hover */
+}
+
+
+/* --- Header --- */
+header {
+    background-color: #343a40;
+    /* Dark grey header */
+    color: #ffffff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9rem;
+    /* Slightly larger logo text */
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 5px 0;
+    color: #ffffff;
+    /* Ensure logo text is white */
+}
+
+header nav {
+    margin-top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* Align nav to the right */
+}
+
+header nav ul li {
+    margin-left: 18px;
+    /* Spacing between nav items */
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    color: #e9ecef;
+    /* Lighter grey for inactive links */
+    text-decoration: none;
+    padding: 9px 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    /* Slightly bolder nav text */
+}
+
+header nav ul li a:hover {
+    background-color: #495057;
+    /* Darker grey background on hover */
+    color: #ffffff;
+    /* White text on hover */
+    text-decoration: none;
+}
+
+header nav ul li a.active {
+    background-color: #007bff;
+    /* Blue background for active link */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #343a40;
+    /* Match header background */
+    color: #adb5bd;
+    /* Medium grey text */
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    margin-top: 3.5rem;
+    /* More space above footer */
+    font-size: 0.9rem;
+    line-height: 1.8;
+    /* Better line spacing in footer */
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    /* Less space between paragraphs in footer */
+}
+
+footer small {
+    color: #6c757d;
+    /* Darker grey for smaller text */
+    display: block;
+    /* Ensure it takes its own line if needed */
+    margin-top: 0.5rem;
+}
+
+/* --- Slider Styles (Copied from previous refined version) --- */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    /* Default height for largest screens */
+    overflow: hidden;
+    background-color: #555;
+}
+
+.slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider .slide-content {
+    background-color: rgba(0, 0, 0, 0.65);
+    /* Slightly darker overlay */
+    color: #fff;
+    border-radius: 8px;
+    z-index: 2;
+    animation: fadeInContent 1s ease-out 0.5s forwards;
+    opacity: 0;
+    /* Start hidden for animation */
+    padding: 3rem 4rem;
+    /* Default padding */
+    max-width: 60%;
+    /* Default width */
+}
+
+@keyframes fadeInContent {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Optional: Add slight upward movement */
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+.slider .slide.active .slide-content {
+    opacity: 1;
+    animation: fadeInContent 1s ease-out 0.5s forwards;
+    /* Ensure animation runs on active */
+}
+
+.slider .slide-content h1 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    /* Default font size */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    /* Text shadow for readability */
+}
+
+.slider .slide-content p {
+    color: #eee;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    /* Default font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(52, 58, 64, 0.5);
+    /* Dark semi-transparent background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    /* Make buttons circular */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 50px;
+    /* Fixed width */
+    height: 50px;
+    /* Fixed height */
+    font-size: 1.5rem;
+    /* Adjust icon size */
+    display: flex;
+    /* Center icon */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider .slider-btn.prev {
+    left: 25px;
+}
+
+.slider .slider-btn.next {
+    right: 25px;
+}
+
+.slider .slider-btn:hover {
+    background-color: rgba(52, 58, 64, 0.8);
+    transform: translateY(-50%) scale(1.1);
+    /* Scale up on hover */
+}
+
+/* --- Home Page Specific Sections --- */
+
+.intro {
+    padding: 3.5rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 2.5rem auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    max-width: 1140px;
+    /* Match container */
+}
+
+.intro h2 {
+    color: #007bff;
+}
+
+/* Blue heading for intro */
+
+.features-overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 3.5rem 0;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    flex-basis: 46%;
+    /* Adjust basis for 2 columns */
+    min-width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #007bff;
+    /* Accent border */
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    /* Increased lift */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    /* Stronger shadow */
+}
+
+.feature-box h3 {
+    color: #343a40;
+    /* Dark heading */
+    margin-bottom: 1rem;
+}
+
+.feature-box p {
+    margin-bottom: 1.8rem;
+    flex-grow: 1;
+    /* Allow paragraph to take space */
+    color: #555;
+}
+
+.feature-box .btn {
+    margin-top: auto;
+    /* Pushes button to bottom */
+}
+
+/* --- Page Intro Image Styling --- */
+.page-intro-image {
+    display: block;
+    max-width: 65%;
+    /* Default max width */
+    height: auto;
+    margin: 3rem auto;
+    /* Consistent margin */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Responsive Styles --- */
+
+/* X-Large Screens (1200px - 1399px) - Minor adjustments */
+@media (max-width: 1399.98px) {
+    .slider {
+        height: 68vh;
+    }
+
+    .slider .slide-content {
+        padding: 2.8rem 3.5rem;
+        max-width: 65%;
+    }
+
+    .slider .slide-content h1 {
+        font-size: 3rem;
+    }
+
+    .slider .slide-content p {
+        font-size: 1.25rem;
+    }
+
+    .slider .slider-btn.prev {
+        left: 20px;
+    }
+
+    .slider .slider-btn.next {
+        right: 20px;
+    }
+}
+
+/* Large Screens (992px - 1199px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .slider {
+        height: 65vh;
+    }
+
+    .slider .slide-content {
+        padding: 2.5rem 3rem;
+        max-width: 70%;
+    }
+
+    .slider .slide-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .slider .slide-content p {
+        font-size: 1.2rem;
+    }
+
+    .feature-box {
+        flex-basis: 47%;
+    }
+
+    /* Slightly adjust basis */
+    .page-intro-image {
+        max-width: 70%;
+    }
+}
+
+/* Medium Screens (Tablets, 768px - 991px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    /* Center header content */
+    header .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+
+    .slider .slide-content {
+        padding: 2rem 2.5rem;
+        max-width: 75%;
+    }
+
+    .slider .slide-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .slider .slide-content p {
+        font-size: 1.1rem;
+    }
+
+    .slider .slider-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .slider .slider-btn.prev {
+        left: 15px;
+    }
+
+    .slider .slider-btn.next {
+        right: 15px;
+    }
+
+    .intro {
+        padding: 3rem 1.5rem;
+    }
+
+    .page-padding {
+        padding: 3rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .feature-box {
+        flex-basis: 48%;
+    }
+
+    /* Still allow 2 columns if space permits */
+    .page-intro-image {
+        max-width: 75%;
+        margin: 2.5rem auto;
+    }
+}
+
+/* Small Screens (Landscape Phones, Tablets portrait, 576px - 767px) */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 0.95rem;
+        /* Slightly smaller base font */
+    }
+
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    /* Reduce nav spacing */
+    header nav ul li a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .slider {
+        height: 55vh;
+    }
+
+    .slider .slide-content {
+        padding: 1.5rem 2rem;
+        max-width: 85%;
+    }
+
+    .slider .slide-content h1 {
+        font-size: 2rem;
+    }
+
+    .slider .slide-content p {
+        font-size: 1rem;
+    }
+
+    .slider .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .slider .slider-btn.prev {
+        left: 10px;
+    }
+
+    .slider .slider-btn.next {
+        right: 10px;
+    }
+
+    .intro {
+        padding: 2.5rem 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .page-padding {
+        padding: 2.5rem 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .features-overview {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .feature-box {
+        flex-basis: auto;
+        width: 90%;
+        padding: 2rem;
+    }
+
+    /* Stack feature boxes */
+    .btn {
+        padding: 11px 24px;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust button padding */
+    .page-intro-image {
+        max-width: 85%;
+        margin: 2rem auto;
+    }
+
+    ul,
+    ol {
+        margin-left: 20px;
+    }
+}
+
+/* Extra Small Screens (Portrait Phones, < 576px) */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    header .logo {
+        font-size: 1.6rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.85rem;
+        padding: 7px 8px;
+    }
+
+    .slider {
+        height: 50vh;
+    }
+
+    /* Further reduce height */
+    .slider .slide-content {
+        padding: 1.2rem 1.5rem;
+        max-width: 92%;
+        /* Allow wider content box */
+        border-radius: 5px;
+    }
+
+    .slider .slide-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .slider .slide-content p {
+        font-size: 0.9rem;
+    }
+
+    .slider .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+
+    .slider .slider-btn.prev {
+        left: 8px;
+    }
+
+    .slider .slider-btn.next {
+        right: 8px;
+    }
+
+    .intro,
+    .page-padding {
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+
+    .feature-box {
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    .page-intro-image {
+        max-width: 90%;
+        margin: 1.8rem auto;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        font-size: 0.85rem;
+    }
+}
